@@ -2,11 +2,16 @@ package com.busayo.organizationservice.controller;
 
 import com.busayo.organizationservice.dto.OrganizationDto;
 import com.busayo.organizationservice.service.OrganizationService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+@Tag(
+        name = "Organization Service - OrganizationController",
+        description = "Organization controller exposes REST APIs for Organization Service"
+)
 @RestController
 @RequestMapping("/organizations")
 @AllArgsConstructor
